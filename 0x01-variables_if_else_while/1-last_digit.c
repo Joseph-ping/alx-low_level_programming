@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Determines whether the value or interger, is 0 or is less than 6,greater than 5 . 
+ * main - Determines either is less than 6, greater than 5, or is 0
  *
  * Return: Always 0 (Success)
  */
