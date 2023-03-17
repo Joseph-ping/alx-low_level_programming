@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - print if the number is postive, negative, or zero 
+ * main - print if the number is negative, postive, zero
  *
  * Description: using the main function
- * this program prints "Programming is negative, positive, or zero
+ * this program prints "Programming is negative, positive, zero
  * Return: 0
  */
 int main(void)
