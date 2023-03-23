@@ -6,7 +6,6 @@
  *in 10 rows
  * Return: ALways 0 
  */
-
 void more_numbers(void)
 {
 	int n1, n2;
