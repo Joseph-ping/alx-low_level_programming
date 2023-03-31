@@ -3,41 +3,20 @@
 
 /**
  * print_array - prints n elements of an array of integers
- * a new line then follows
- * @x: array to be printed
- * @y: number of elements to print
+ * followed by a new line
+ * @a: array to be printed
+ * @n: number of elements to print
  */
-void print_array(int *x, int y)
+void print_array(int *a, int n)
 {
 	int i;
 
-	for (i = 0; i < y; i++)
+	for (i = 0; i < n; i++)
 	{
 		if (i == 0)
-			printf("%d", x[i]);
+			printf("%d", a[i]);
 		else
-			printf(", %d", x[i]);
+			printf(", %d", a[i]);
 	}
-	printf("\y");
-}#include <stdio.h>
-#include "main.h"
-
-/**
- * print_array - prints n elements of an array of integers
- * a new line then follows
- * @x: array to be printed
- * @y: number of elements to print
- */
-void print_array(int *x, int y)
-{
-	int i;
-
-	for (i = 0; i < y; i++)
-	{
-		if (i == 0)
-			printf("%d", x[i]);
-		else
-			printf(", %d", x[i]);
-	}
-	printf("\y");
+	printf("\n");
 }
