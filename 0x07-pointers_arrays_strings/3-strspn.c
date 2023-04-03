@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * _strspn - Captures the length of a prefix substring.
- * @b: The string to be searched.
- * @allow: The prefix to be measured.
+ * _strspn - Records the length of a prefix substring.
+ * @s: The searched string .
+ * @accept: The prefix under measure.
  *
- * Return: The number of bytes in b which
- * consist only of bytes from allow
+ * Return: The number of bytes in s which
+ * consist only of bytes from accept
  */
-unsigned int _strspn(char *b, char *allow)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int bytes = 0;
 	int index;
 
-	while (*b)
+	while (*s)
 	{
-		for (index = 0; allow[index]; index++)
+		for (index = 0; accept[index]; index++)
 		{
-			if (*b == allow[index])
+			if (*s == accept[index])
 			{
 				bytes++;
 				break;
