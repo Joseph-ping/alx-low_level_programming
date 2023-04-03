@@ -2,8 +2,8 @@
 
 /**
  * _strpbrk - Searches a string for any of a set of bytes.
- * @s: The string to be searched.
  * @accept: The set of butes to be searched for.
+ * @s: The string to be searched.
  *
  * Return: If a set is matched - a pointer to be matched byte.
  * If no set is matched - NULL.
@@ -22,3 +22,6 @@ char *_strpbrk(char *s, char *accept)
 
 		s++;
 	}
+
+	return ('\0');
+}
