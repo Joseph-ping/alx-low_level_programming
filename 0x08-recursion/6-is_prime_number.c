@@ -8,7 +8,7 @@ int actual_prime(int p, int i);
  *
  * Return: 1 if n is a prime number, 0 if not
  */
-int is_prime_number(int n)
+int is_prime_number(int p)
 {
 	if (p <= 1)
 		return (0);
