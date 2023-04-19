@@ -2,13 +2,13 @@
 #define DOG_H
 
 /**
-*struct dog - the dog's basic info
-*@name:First parameter
-*@age: Second parameter
-*@owner:Third entity or parameter
-*
-*Description:Longer exposure of parameters
-*/
+ * struct dog - Dog attributes
+ * @name: The name of the dog.
+ * @age: The age of the dog.
+ * @owner:  dog's owner'
+ *
+ * Description: The attributes of a dog.
+ */
 struct dog
 {
 	char *name;
@@ -17,14 +17,12 @@ struct dog
 };
 
 /**
-*dog_t -typedef for struct dog
-*/
+ * dog_t - Typedef for dog structure
+ */
 typedef struct dog dog_t;
-void int_dog(struct dog *d, char *name, float age, char *owner);
+
 void print_dog(struct dog *d);
+void init_dog(struct dog *d, char *name, float age, char *owner);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
-char *strcpy(char *dest, char *src);
-int _strlen(char *s);
-
 #endif
