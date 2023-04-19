@@ -1,5 +1,5 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
 
 int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
@@ -59,33 +59,33 @@ dog_t *new_dog(char *name, float age, char *owner)
  */
 int _strlen(char *s)
 {
-	int c = 0;
+	int q = 0;
 
 	for (; *s != '\0'; s++)
 	{
-		c++;
+		q++;
 	}
 
-	return (c);
+	return (q);
 }
 
 /**
  * _strcpy - Copy a string
  * @dest: Destination value
- * @src: Source valu
+ * @src: Source value
  *
  * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	int k;
 
-	for (i = 0; src[i] != '\0'; i++)
+	for (k = 0; src[k] != '\0'; k++)
 	{
-		dest[i] = src[i];
+		dest[k] = src[k];
 	}
 
-	dest[i++] = '\0';
+	dest[k++] = '\0';
 
 	return (dest);
 }
