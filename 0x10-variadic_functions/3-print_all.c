@@ -1,9 +1,9 @@
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-#include "variadic_functions.h"
 /**
  * print_all - Entry Point
- * c = char, i = int, f = float, h = char * (if null print (nil))
+ * c = char, i = int, f = float, s = char * (if null print (nil))
  * @format: list of arg types
  * Return: 0
  */
@@ -36,7 +36,7 @@ void print_all(const char * const format, ...)
 				case 'f':
 					printf("%f%s", va_arg(valist, double), sep);
 					break;
-				case 'h':
+				case 's':
 					str = va_arg(valist, char *);
 					if (str == NULL)
 						str = "(nil)";
