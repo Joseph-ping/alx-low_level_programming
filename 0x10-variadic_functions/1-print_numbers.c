@@ -1,13 +1,13 @@
-#include <stdio.h>
 #include <stdarg.h>
+#include <stdio.h>
 #include "variadic_functions.h"
 /**
  * print_numbers - Entry Point
  * @separator: comma space
- * @p: elements to be printed
+ * @n: elements to be printed
  * Return: void
  */
-void print_numbers(const char *separator, const unsigned int p, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	char *sep;
 	unsigned int i;
@@ -17,12 +17,12 @@ void print_numbers(const char *separator, const unsigned int p, ...)
 		sep = "";
 	else
 		sep = (char *) separator;
-	va_start(list, p);
+	va_start(list, n);
 
-	if (p > 0)
+	if (n > 0)
 		printf("%d", va_arg(list, int));
-	for (i = 1; i < p; i++)
+	for (i = 1; i < n; i++)
 		printf("%s%d", sep, va_arg(list, int));
-	printf("\p");
+	printf("\n");
 	va_end(list);
 }
