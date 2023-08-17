@@ -1,1 +1,1 @@
-Bit manipultion 
+Bit manipulation tasks 

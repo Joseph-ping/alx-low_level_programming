@@ -1,1 +1,1 @@
-All about Low Level Programming and trials.
+0x14-bit_manipulation
