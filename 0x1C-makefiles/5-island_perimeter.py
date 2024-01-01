@@ -3,7 +3,7 @@
 
 
 def island_perimeter(grid):
-    """Return the perimiter of an island.
+    """Return the perimeter of an island.
 
     The grid represents water by 0 and land by 1.
 
